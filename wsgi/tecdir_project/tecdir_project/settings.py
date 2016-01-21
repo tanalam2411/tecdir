@@ -29,6 +29,9 @@ SECRET_KEY = SECRETS['secret_key']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG') == 'True'
+## Comment before commting
+DEBUG = True
+## Comment before commting
 
 from socket import gethostname
 ALLOWED_HOSTS = [
@@ -60,8 +63,8 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-# GETTING-STARTED: change 'myproject' to your project name:
-ROOT_URLCONF = 'myproject.urls'
+# GETTING-STARTED: change 'tecdir_project' to your project name:
+ROOT_URLCONF = 'tecdir_project.urls'
 
 TEMPLATES = [
     {
@@ -79,7 +82,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'myproject.wsgi.application'
+WSGI_APPLICATION = 'tecdir_project.wsgi.application'
 
 
 # Database

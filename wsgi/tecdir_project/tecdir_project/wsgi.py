@@ -11,7 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-# GETTING-STARTED: change 'myproject' to your project name:
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "myproject.settings")
+# GETTING-STARTED: change 'tecdir_project' to your project name:
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "tecdir_project.settings")
 
 application = get_wsgi_application()
