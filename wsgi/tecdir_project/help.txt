@@ -1,0 +1,92 @@
+1) django template inheritance - https://docs.djangoproject.com/en/1.9/ref/templates/language/#template-inheritance
+2)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TecDir - Technical Directory</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'bower_components/bootstrap/dist/css/bootstrap-theme.min.css' %}">
+    <script src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
+    <script src="{% static 'bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+    <style>
+        .navbar-custom {
+            background-color:background: rgba(242,246,248,1);
+            background: -moz-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 14%, rgba(224,239,249,1) 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(242,246,248,1)), color-stop(14%, rgba(216,225,231,1)), color-stop(100%, rgba(224,239,249,1)));
+            background: -webkit-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 14%, rgba(224,239,249,1) 100%);
+            background: -o-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 14%, rgba(224,239,249,1) 100%);
+            background: -ms-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 14%, rgba(224,239,249,1) 100%);
+            background: linear-gradient(to right, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 14%, rgba(224,239,249,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9', GradientType=1 );
+
+            color:#ffffff;
+            border-radius:0;
+            height: 100px;
+
+            #margin-top: 10px;
+            #margin-left: 10px;
+            #margin-right: 10px;
+            }
+    </style>
+</head>
+<body>
+<nav id="home-navbar" class="navbar navbar-custom" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#">
+                <span class="sr-only">Toggle navigation</span>
+            </button>
+            <a class="navbar-brand" href="#">TecDir</a>
+        </div>
+    </div>
+</nav>
+
+
+
+
+    <!--<div class="navbar-header">-->
+      <!--<a class="navbar-brand" href="#">-->
+        <!--<img alt="Brand" src="...">-->
+      <!--</a>-->
+    <!--</div>-->
+
+
+
+<!--<nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">-->
+    <!--&lt;!&ndash; Brand and toggle get grouped for better mobile display &ndash;&gt;-->
+    <!--<div class="container">-->
+        <!--<div class="navbar-header">-->
+            <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">-->
+                <!--<span class="sr-only">Toggle navigation</span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+            <!--</button>-->
+            <!--<a class="navbar-brand" href="#">Tutorial Republic</a>-->
+        <!--</div>-->
+        <!--&lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
+        <!--<div class="collapse navbar-collapse" id="navbarCollapse">-->
+            <!--<ul class="nav navbar-nav">-->
+                <!--<li class="active"><a href="http://www.tutorialrepublic.com" target="_blank">Home</a></li>-->
+                <!--<li><a href="http://www.tutorialrepublic.com/about-us.php" target="_blank">About</a></li>-->
+                <!--<li><a href="http://www.tutorialrepublic.com/contact-us.php" target="_blank">Contact</a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</nav>-->
+
+
+<!--<nav class="navbar navbar-default">-->
+  <!--<div class="container-fluid">-->
+    <!--<div class="navbar-header">-->
+      <!--<a class="navbar-brand" href="#">-->
+        <!--<img alt="Brand" src="...">-->
+      <!--</a>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</nav>-->
+</body>
+</html>

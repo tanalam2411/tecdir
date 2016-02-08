@@ -1,0 +1,27 @@
+{
+  "name": "tecdir",
+  "description": "tecdri bower components",
+  "main": "bower",
+  "moduleType": [],
+  "keywords": [
+    "tecdir",
+    "bower",
+    "static"
+  ],
+  "authors": [
+    "Tanveer Alam"
+  ],
+  "license": "Tanveer",
+  "homepage": "home.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
