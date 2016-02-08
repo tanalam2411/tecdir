@@ -1,0 +1,9 @@
+
+.navbar-brand{
+    font-size: xx-large;
+    font-family: fantasy;
+    }
+
+.navbar-default .navbar-brand {
+    color: #5bc0de;
+}

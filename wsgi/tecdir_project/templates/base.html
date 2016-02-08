@@ -6,6 +6,7 @@
     {% load staticfiles %}
     <link rel="stylesheet" href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'bower_components/bootstrap/dist/css/bootstrap-theme.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/tecdir_project_css.css' %}">
     <script src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
     <script src="{% static 'bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
     <script>
@@ -20,6 +21,16 @@
     {% block app_level_head_tag_content %}{% endblock %}
 </head>
 <body>
+    <nav class="navbar navbar-default">
+          <div class="container-fluid">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                  </button>
+                  <a class="navbar-brand" href="#">TecDir</a>
+              </div>
+          </div>
+    </nav>
     {% block content %}{% endblock %}
 </body>
 </html>
