@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TecDir - Technical Directory</title>
     {% load staticfiles %}
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'icons/folder_open/folder-visiting.ico' %}" />
     <link rel="stylesheet" href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'bower_components/bootstrap/dist/css/bootstrap-theme.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/tecdir_project_css.css' %}">
+    <link rel="stylesheet" href="{% static 'svg/folder_open/style.css' %}">
     <script src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
     <script src="{% static 'bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
     <script>
@@ -21,13 +24,21 @@
     {% block app_level_head_tag_content %}{% endblock %}
 </head>
 <body>
+    <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    <symbol id="icon-folder-open" viewBox="0 0 1024 1024">
+    <title>folder-open</title>
+    <path class="path1" d="M832 960l192-512h-832l-192 512zM128 384l-128 576v-832h288l128 128h416v128z"></path>
+    </symbol>
+    </defs>
+    </svg>
     <nav class="navbar navbar-default">
-          <div class="container-fluid">
+          <div class="container-fluid base-container-fluid">
               <div class="navbar-header">
                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                       <span class="sr-only">Toggle navigation</span>
                   </button>
-                  <a class="navbar-brand" href="#">TecDir</a>
+                  <a class="navbar-brand base-navbar-brand" href="/">TecDir <svg class="icon icon-folder-open"><use xlink:href="#icon-folder-open"></use></svg></a>
               </div>
           </div>
     </nav>
