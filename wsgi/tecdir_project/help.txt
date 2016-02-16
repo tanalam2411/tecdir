@@ -2,5 +2,7 @@
 2) SVG - https://icomoon.io
 3) Icons - https://www.iconfinder.com
 4) Responsive Testing - Mobile/RWD Tester (chrome extension)
-
+5) Google Analytics - http://www.lunametrics.com/blog/2015/04/27/internal-traffic-google-analytics/
+6) Bootstrap Examples - http://www.tutorialrepublic.com/twitter-bootstrap-examples.php
+7) Responsive layout - http://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=responsive-layout
 <!--<span class="mls navbar-brand base-navbar-brand">TecDir <svg class="icon icon-folder-open"><use xlink:href="#icon-folder-open"></use></svg></span>-->
