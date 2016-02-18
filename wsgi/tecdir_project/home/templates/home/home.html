@@ -1,6 +1,53 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 
+{% block app_level_head_tag_content %}
+<link rel="stylesheet" href="{% static 'home/css/tecdir_home_css.css' %}">
+{% endblock %}
+
 {% block content %}
-<div class="row"></div>
+<div class="row root-folder">
+    <div class="col-sm-8 col-md-6 col-lg-4  col-root-sub-folder">
+        <div class="root-sub-folder">
+            <object class="root-sub-folder-object" type="image/svg+xml" data="{% static 'home/images/folder_icon/python.svg' %}">Your browser does not support SVG</object>
+            <h3 class="root-sub-folder-title"><span class="label label-default">Python</span></h3>
+            <a href="#"><img src="{% static 'home/images/folder/folder_gray_128.128.png' %}"/></a>
+        </div>
+    </div>
+    <div class="col-sm-8 col-md-6 col-lg-4 col-root-sub-folder">
+        <div class="root-sub-folder">
+            <object class="root-sub-folder-object" type="image/svg+xml" data="{% static 'home/images/folder_icon/python.svg' %}">Your browser does not support SVG</object>
+            <h3 class="root-sub-folder-title"><span class="label label-default">Python</span></h3>
+            <a href="#"><img src="{% static 'home/images/folder/folder_gray_128.128.png' %}"/></a>
+        </div>
+    </div>
+    <div class="col-sm-8 col-md-6 col-lg-4  col-root-sub-folder">
+        <div class="root-sub-folder">
+            <object class="root-sub-folder-object" type="image/svg+xml" data="{% static 'home/images/folder_icon/python.svg' %}">Your browser does not support SVG</object>
+            <h3 class="root-sub-folder-title"><span class="label label-default">Python</span></h3>
+            <a href="#"><img src="{% static 'home/images/folder/folder_gray_128.128.png' %}"/></a>
+        </div>
+    </div>
+    <div class="col-sm-8 col-md-6 col-lg-4  col-root-sub-folder">
+        <div class="root-sub-folder">
+            <object class="root-sub-folder-object" type="image/svg+xml" data="{% static 'home/images/folder_icon/python.svg' %}">Your browser does not support SVG</object>
+            <h3 class="root-sub-folder-title"><span class="label label-default">Python</span></h3>
+            <a href="#"><img src="{% static 'home/images/folder/folder_gray_128.128.png' %}"/></a>
+        </div>
+    </div>
+    <div class="col-sm-8 col-md-6 col-lg-4 col-root-sub-folder">
+        <div class="root-sub-folder">
+            <object class="root-sub-folder-object" type="image/svg+xml" data="{% static 'home/images/folder_icon/python.svg' %}">Your browser does not support SVG</object>
+            <h3 class="root-sub-folder-title"><span class="label label-default">Python</span></h3>
+            <a href="#"><img src="{% static 'home/images/folder/folder_gray_128.128.png' %}"/></a>
+        </div>
+    </div>
+    <div class="col-sm-8 col-md-6 col-lg-4  col-root-sub-folder">
+        <div class="root-sub-folder">
+            <object class="root-sub-folder-object" type="image/svg+xml" data="{% static 'home/images/folder_icon/python.svg' %}">Your browser does not support SVG</object>
+            <h3 class="root-sub-folder-title"><span class="label label-default">Python</span></h3>
+            <a href="#"><img src="{% static 'home/images/folder/folder_gray_128.128.png' %}"/></a>
+        </div>
+    </div>
+</div>
 {% endblock %}

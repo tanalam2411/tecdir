@@ -1,0 +1,100 @@
+
+
+.root-folder{
+    padding-bottom: 50px;
+}
+
+.col-root-sub-folder {
+    padding: 20px;
+}
+
+
+.root-sub-folder{
+    #background-image: url('/static/home/images/folder/folder_128.128.png');
+    #background:url('/static/home/images/folder_background/python-logo-glassy-200x200.png') no-repeat center center;
+    height: 250px;
+    #border: 1px solid #30CA99;
+
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #c3c3c3;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.15);
+    overflow: hidden;
+    -webkit-transition: box-shadow 200ms;
+    transition: box-shadow 200ms;
+    padding: 5px;
+}
+
+.root-sub-folder a img {
+    display:block;
+    margin:auto;
+}
+
+.root-sub-folder .label-default{
+    background-color: #3965a4;
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+.root-sub-folder .root-sub-folder-title{
+    padding: 5px;
+}
+
+
+.root-sub-folder .root-sub-folder-object{
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+}
+
+
+/* --------------------------   Extra Small Devices, Phones ------------------------*/
+@media only screen and (max-width : 768px) {
+    .root-folder{
+        padding-bottom: 25px;
+    }
+
+    .col-root-sub-folder{
+        padding: 25px;
+    }
+
+    .root-sub-folder{
+        #background-image: url('/static/home/images/folder/folder_128.128.png');
+        #background:url('/static/home/images/folder_background/python-logo-glassy-200x200.png') no-repeat center center;
+        height: 250px;
+        #border: 1px solid #30CA99;
+
+        background-color: #fff;
+        border-radius: 4px;
+        border: 1px solid #c3c3c3;
+        box-shadow: 0px 1px 3px rgba(0,0,0,0.15);
+        overflow: hidden;
+        -webkit-transition: box-shadow 200ms;
+        transition: box-shadow 100ms;
+        padding: 5px;
+    }
+
+    .root-sub-folder a img {
+        display:block;
+        margin:auto;
+    }
+
+    .root-sub-folder .label-default{
+        background-color: #3965a4;
+        display: block;
+        margin: auto;
+        padding: 5px;
+    }
+
+    .root-sub-folder .root-sub-folder-title{
+        padding: 5px;
+    }
+
+
+    .root-sub-folder .root-sub-folder-object{
+        display: block;
+        margin: auto;
+        padding-top: 5px;
+    }
+}
