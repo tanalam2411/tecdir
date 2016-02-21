@@ -13,12 +13,10 @@
     #background-image: url('/static/home/images/folder/folder_128.128.png');
     #background:url('/static/home/images/folder_background/python-logo-glassy-200x200.png') no-repeat center center;
     height: 250px;
-    #border: 1px solid #30CA99;
-
-    background-color: #fff;
+    background-color: #FFFFFF;
     border-radius: 4px;
     border: 1px solid #c3c3c3;
-    box-shadow: 0px 1px 6px rgba(0,0,0,0.15);
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.15);
     overflow: hidden;
     -webkit-transition: box-shadow 200ms;
     transition: box-shadow 200ms;
@@ -28,6 +26,12 @@
 .root-sub-folder img {
     display:block;
     margin:auto;
+}
+
+.root-sub-folder a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .root-sub-folder .label-default{
@@ -109,6 +113,31 @@
         margin: auto;
         padding: 5px;
     }
+
+
+    .root-sub-folder .label-python{
+        background-color: #326C9C;
+    }
+    .root-sub-folder .label-ubuntu{
+        background-color: #DD4814;
+    }
+
+    .root-sub-folder .label-elastic-search{
+        background-color: #39BFB0;
+    }
+
+    .root-sub-folder .label-computer-network{
+        background-color: #91C1EB;
+    }
+
+    .root-sub-folder .label-mysql{
+        background-color: #F59620;
+    }
+
+    .root-sub-folder .label-java{
+        background-color: #F40000;
+    }
+
 
     .root-sub-folder .root-sub-folder-title{
         padding: 5px;

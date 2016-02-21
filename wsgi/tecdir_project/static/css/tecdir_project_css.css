@@ -19,12 +19,13 @@
 
 .copy-right-p{
     color: #96AFD1;
-    padding-top: 30px;
+    padding-top: 20px;
     }
 
 .tecdir-footer{
     background-color: #3965A4;
-    height: 80px;
+    height: 60px;
+    border-radius: 5px;
     }
 
 
@@ -50,12 +51,13 @@
 
     .copy-right-p{
         color: #96AFD1;
-        padding-top: 20px;
+        padding-top: 10px;
     }
 
     .tecdir-footer{
         background-color: #3965A4;
-        height: 60px;
+        height: 40px;
+        border-radius: 4px;
     }
 }
 

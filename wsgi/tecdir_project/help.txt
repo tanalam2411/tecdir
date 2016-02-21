@@ -7,6 +7,7 @@
 7) Responsive layout - http://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=responsive-layout
 8) Folder Icon - https://www.iconfinder.com/icons/314459/folder_icon#size=128
 9) Add SVG tpo HTML - http://www.sitepoint.com/add-svg-to-web-page/
+10) Make div cliable link - https://www.sitepoint.com/community/t/how-to-make-a-div-a-clickable-link/108895
 <!--<span class="mls navbar-brand base-navbar-brand">TecDir <svg class="icon icon-folder-open"><use xlink:href="#icon-folder-open"></use></svg></span>-->
 
 
