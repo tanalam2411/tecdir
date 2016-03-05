@@ -72,7 +72,8 @@ ROOT_URLCONF = 'tecdir_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates'),
+                 os.path.join(BASE_DIR, 'python_app', 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -121,7 +122,8 @@ STATIC_ROOT = os.path.join(WSGI_DIR, 'static')
 
 STATICFILES_DIRS = (
     os.path.join(os.path.join(BASE_DIR, 'static')),
-    os.path.join(BASE_DIR, 'home')
+    os.path.join(BASE_DIR, 'home'),
+    os.path.join(BASE_DIR, 'python_app')
 )
 
 

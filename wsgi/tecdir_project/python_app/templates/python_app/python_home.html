@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block app_level_head_tag_content %}
+<link rel="stylesheet" href="{% static 'python_app/css/tecdir_python_app_css.css' %}">
+<script src="{% static 'python_app/js/tecdir_python_app_js.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    <img src="{% static 'python_app/images/logos/python-logo.png' %}">
+</div>
+
+<!--<div class="row python-menu">-->
+    <!--<div class="col-md-12 python-tutorial-main">-->
+        <!--<p><strong>Python Tutorial</strong></p>-->
+        <!--&lt;!&ndash;<div class="col-md-4"></div>&ndash;&gt;-->
+        <!--<div class="col-md-12 python-tutorial-container">-->
+            <!--<div class="panel-group" id="accordion">-->
+                <!--<div class="panel panel-default">-->
+                    <!--<div class="python-tutorial panel-heading">-->
+                        <!--<h4 class="python-tutorial panel-title">-->
+                            <!--<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><strong>Python Tutorial</strong></a>-->
+                            <!--<i class="python-tutorial indicator glyphicon glyphicon-folder-open pull-right"></i>-->
+                        <!--</h4>-->
+                    <!--</div>-->
+                    <!--<div id="collapseOne" class="panel-collapse collapse in">-->
+                        <!--<div class="panel-body">-->
+                            <!--<p>python list</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;<div class="col-md-4"></div>&ndash;&gt;-->
+    <!--</div>-->
+<!--</div>-->
+
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="python-tutorial panel-heading">
+                    <h4 class="python-tutorial panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#python-tutorial-accordion"><strong>Python Tutorial</strong></a>
+                        <i class="python-tutorial indicator glyphicon glyphicon-folder-open pull-right"></i>
+                    </h4>
+                </div>
+                <div id="python-tutorial-accordion" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <div class="col-md-6">
+                            <div class="list-group">
+                                <button type="button" class="list-group-item python-index-title">Python 2.x</button>
+                                <button type="button" class="list-group-item">List</button>
+                                <button type="button" class="list-group-item">Tuple</button>
+                                <button type="button" class="list-group-item">Dict</button>
+                                <button type="button" class="list-group-item">Class</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="list-group">
+                                <button type="button" class="list-group-item python-index-title">Python 3.x</button>
+                                <button type="button" class="list-group-item">List</button>
+                                <button type="button" class="list-group-item">Tuple</button>
+                                <button type="button" class="list-group-item">Dict</button>
+                                <button type="button" class="list-group-item">Class</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+
+
+{% endblock %}

@@ -9,7 +9,9 @@ def python_home(request):
     :param request:
     :return: python_home python's home page: http://www.tecdir.com/python/
     """
-    return HttpResponse("python home.")
+    context = {}
+    template = loader.get_template('python_app/python_home.html')
+    return HttpResponse(template.render(context), request)
 
 
 # def home_view(request):
