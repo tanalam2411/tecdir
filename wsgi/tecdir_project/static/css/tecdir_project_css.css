@@ -30,6 +30,16 @@
     }
 
 
+/*------ Mozilla dotted outline fix----------*/
+
+a, a:active, a:focus {
+outline: none;
+}
+
+/*-------------------------------------------*/
+
+
+
 /* --------------------------   Extra Small Devices, Phones ------------------------*/
 @media only screen and (max-width : 768px) {
 

@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block app_level_head_tag_content %}
+<link rel="stylesheet" href="{% static 'python_app/css/python_tutorial_2x/python_tutorial_2x_home_css.css' %}">
+<script src="{% static 'python_app/js/python_tutorial_2x_home_js.js' %}"></script>
+{% endblock %}
+
+<!--https://www.google.co.in/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=vertical%20nav%20bootstrap%203-->
+<!--http://www.jonathanbriehl.com/2014/01/17/vertical-menu-for-bootstrap-3/-->
+<!--http://startbootstrap.com/template-overviews/simple-sidebar/-->
+
+<!--nice** http://stackoverflow.com/a/19811652/3270800-->
+<!--http://bootsnipp.com/snippets/featured/nav-sidebar-with-toggle-button-->
+
+<!--http://codecanyon.net/item/auto-inherit-bootstrap-theme-vertical-sidebar/12259411-->
+
+{% block content %}
+
+<div class="row">
+
+    <!-- Nav Bar Start Python 2X index-->
+    <div class="col-md-3">
+        <nav role="navigation" id="python2X" class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand"></a>
+            </div>
+            <!-- Collection of nav links and other content for toggling -->
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#">Content</a></li>
+                    <li><a href="#id1">Flow Tools</a></li>
+                    <li><a href="#id2">Data Structures</a></li>
+                    <li><a href="#id3">Modules</a></li>
+                    <li><a href="#id4">Input and Output</a></li>
+                    <li><a href="#">Errors and Exceptions</a></li>
+                    <li><a href="#">Classes</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Nav Bar End Python 2X index-->
+
+
+    <!-- Actual Content Start -->
+    <div class="col-md-9">
+            Content Here
+    </div>
+    <!-- Actual Content Start -->
+
+</div>
+
+<div class="row"><br></div>
+{% endblock %}

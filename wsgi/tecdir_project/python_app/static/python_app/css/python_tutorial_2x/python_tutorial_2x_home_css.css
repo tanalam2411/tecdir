@@ -1,0 +1,13 @@
+#navbarCollapse{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#python2X {
+    border-bottom: 3px solid cadetblue;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: cadetblue;
+}

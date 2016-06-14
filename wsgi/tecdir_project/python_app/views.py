@@ -14,11 +14,25 @@ def python_home(request):
     return HttpResponse(template.render(context), request)
 
 
-# def home_view(request):
-#     """
-#     :param request: http request
-#     :return: tecdir home page: http://www.tecdir.com
-#     """
-#     context = {}
-#     template = loader.get_template('home/home.html')
-#     return HttpResponse(template.render(context), request)
+def python_tutorial_2x(request):
+    """
+    :param request:
+    :return: python_tutorial_2x python 2X's tutorial home page:
+    """
+    context = {}
+    template = loader.get_template('python_app/python_tutorial_2x/python_tutorial_2x_home.html')
+    return HttpResponse(template.render(context), request)
+
+
+def python_tutorial_3x(request):
+    """
+    :param request:
+    :return:
+    """
+    context = {}
+    template = loader.get_template('python_app/python_tutorial_3x/python_tutorial_3x_home.html')
+    return HttpResponse(template.render(context), request)
+
+
+
+
