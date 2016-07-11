@@ -1,0 +1,101 @@
+
+.container .jumbotron, .container-fluid .jumbotron {
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 6px;
+    background-color: #E95420;
+}
+
+#ubuntu_logo_svg {
+        padding-left: 18px;
+}
+
+.panel-default>.panel-heading{
+    background-image: -webkit-linear-gradient(top,#30CA99 0,#30CA99 100%) !important;
+    background-image: -o-linear-gradient(top,#30CA99 0,#30CA99 100%) !important;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#30CA99),to(#30CA99)) !important;
+    background-image: linear-gradient(to bottom,#30CA99 0,#30CA99 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#30CA99', endColorstr='#30CA99', GradientType=0) !important;
+    background-repeat: repeat-x !important;
+}
+
+.ubuntu-tutorial >.panel-title>a {
+    color: #f5f5f5;
+    text-decoration : none;
+    padding-left: 20px;
+}
+
+.ubuntu-tutorial >.indicator {
+    color: #f5f5f5;
+    float: left !important;
+}
+
+.ubuntu-index-title {
+    background-color: cadetblue;
+    color: #f5f5f5 !important;
+    font-family: inherit;
+    letter-spacing: .02em;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.ubuntu-index-title:hover {
+    background-color: #30CA99 !important;
+}
+
+.ubuntu-index-title:focus {
+    background-color: #30CA99 !important;
+}
+
+
+/* --------------------------   Extra Small Devices, Phones ------------------------*/
+@media only screen and (max-width : 768px) {
+    .container .jumbotron, .container-fluid .jumbotron {
+        padding-top: 0px;
+        padding-bottom: 0;
+        margin-bottom: 30px;
+        color: inherit;
+        background-color: #E95420;
+    }
+
+    #ubuntu_logo_svg {
+        padding-left: 2px;
+    }
+    .panel-default>.panel-heading{
+        background-image: -webkit-linear-gradient(top,#f5f5f5 0,#e8e8e8 100%) !important;
+        background-image: -o-linear-gradient(top,#f5f5f5 0,#e8e8e8 100%) !important;
+        background-image: -webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#e8e8e8)) !important;
+        background-image: linear-gradient(to bottom,#30CA99 0,#30CA99 100%) !important;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0) !important;
+        background-repeat: repeat-x !important;
+    }
+
+    .ubuntu-tutorial >.panel-title>a {
+        color: #f5f5f5;
+        text-decoration : none;
+        padding-left: 20px;
+    }
+
+    .ubuntu-tutorial >.indicator {
+        color: #f5f5f5;
+        float: left !important;
+    }
+
+    .ubuntu-index-title {
+        background-color: cadetblue;
+        color: #f5f5f5 !important;
+        font-family: inherit;
+        letter-spacing: .02em;
+        font-weight: bolder;
+        font-size: large;
+    }
+
+    .ubuntu-index-title:hover {
+        background-color: #30CA99 !important;
+    }
+
+    .ubuntu-index-title:focus {
+        background-color: #30CA99 !important;
+    }
+
+}

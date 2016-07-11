@@ -53,7 +53,10 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     #Tecdir Apps
     'home',
-    'python_app'
+    'python_app',
+    'ubuntu_app',
+    'computer_network_app',
+    'mysql_app'
 )
 
 MIDDLEWARE_CLASSES = (

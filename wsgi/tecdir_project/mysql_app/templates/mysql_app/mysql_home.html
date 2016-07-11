@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block app_level_head_tag_content %}
+<link rel="stylesheet" href="{% static 'mysql_app/css/tecdir_mysql_app_css.css' %}">
+<script src="{% static 'mysql_app/js/tecdir_mysql_app_js.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    <!--<img src="{% static 'python_app/images/logos/python-logo.png' %}">-->
+    <div class="row">
+        <div class="col-md-4">
+            <object type="image/svg+xml" data="{% static 'mysql_app/svg/mysql-logo/MySQL.svg' %}">
+                Your browser does not support SVG
+            </object>
+        </div>
+        <!--<div class="col-md-4">-->
+            <!--<h2 class="jumbotron-h2">MySql</h2>-->
+        <!--</div>-->
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="mysql-tutorial panel-heading">
+                    <h4 class="mysql-tutorial panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#mysql-tutorial-accordion"><strong>MySql Tutorial</strong></a>
+                        <i class="mysql-tutorial indicator glyphicon glyphicon-folder-open pull-right"></i>
+                    </h4>
+                </div>
+                <div id="mysql-tutorial-accordion" class="panel-collapse collapse in">
+                    <div class="panel-body">
+
+                        <div class="col-md-3"></div>
+
+                        <div class="col-md-6">
+                            <div class="list-group">
+                                <a href="/python/python2x" role="button" class="btn list-group-item mysql-index-title">MySql</a>
+                                <!--<button type="button" class="list-group-item">List</button>-->
+                                <!--<button type="button" class="list-group-item">Tuple</button>-->
+                                <!--<button type="button" class="list-group-item">Dict</button>-->
+                                <!--<button type="button" class="list-group-item">Class</button>-->
+                            </div>
+                        </div>
+
+                        <div class="col-md-3"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+
+
+{% endblock %}

@@ -22,6 +22,9 @@ from django.conf.urls.static import static
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', include('home.urls')),
-    url(r'^python/', include('python_app.urls'))
+    url(r'^mysql/', include('mysql_app.urls')),
+    url(r'^python/', include('python_app.urls')),
+    url(r'^ubuntu/', include('ubuntu_app.urls')),
+    url(r'^computer_network/', include('computer_network_app.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \
   + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
