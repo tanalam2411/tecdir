@@ -41,9 +41,14 @@
     padding: 10px;
 }
 
+.root-sub-folder .label-linux{
+    background-color: #333333;
+}
+
 .root-sub-folder .label-python{
     background-color: #326C9C;
 }
+
 .root-sub-folder .label-ubuntu{
     background-color: #DD4814;
 }

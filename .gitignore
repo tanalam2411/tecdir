@@ -7,3 +7,6 @@
 .pydevproject
 .idea/
 desktop.ini
+
+dist/*
+tecdir_project.egg-info/*

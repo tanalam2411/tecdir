@@ -1,4 +1,3 @@
-from django.shortcuts import render
 
 from django.template import loader
 from django.http import HttpResponse
@@ -34,5 +33,16 @@ def python_tutorial_3x(request):
     return HttpResponse(template.render(context), request)
 
 
+def flask_tutorial(request):
+    """
+    Args:
+        request:
+
+    Returns: flask_tutorial flask tutorial's home page.
+
+    """
+    context = {}
+    template = loader.get_template('python_app/flask_tutorial/flask_tutorial_home.html')
+    return HttpResponse(template.render(context), request)
 
 

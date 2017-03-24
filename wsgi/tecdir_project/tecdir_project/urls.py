@@ -25,6 +25,8 @@ urlpatterns = [
     url(r'^mysql/', include('mysql_app.urls')),
     url(r'^python/', include('python_app.urls')),
     url(r'^ubuntu/', include('ubuntu_app.urls')),
+    url(r'^java/', include('java_app.urls')),
+    url(r'^linux/', include('linux_app.urls')),
     url(r'^computer_network/', include('computer_network_app.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \
   + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

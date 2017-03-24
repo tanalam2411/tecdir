@@ -10,6 +10,13 @@
 10) Make div cliable link - https://www.sitepoint.com/community/t/how-to-make-a-div-a-clickable-link/108895
 11) Collapsible list - http://jsfiddle.net/zessx/r6eaw/12/
 12) Glyphicons and other component - http://getbootstrap.com/components/
+13) Great UI for text and fonts for tutorial content - https://www.khanacademy.org/partner-content/pixar/effects/particle/p/smoothed-particle-hydrodynamics
+
+
+
+
+
+
 
 
 <!--<span class="mls navbar-brand base-navbar-brand">TecDir <svg class="icon icon-folder-open"><use xlink:href="#icon-folder-open"></use></svg></span>-->

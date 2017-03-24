@@ -56,7 +56,9 @@ INSTALLED_APPS = (
     'python_app',
     'ubuntu_app',
     'computer_network_app',
-    'mysql_app'
+    'mysql_app',
+    'java_app',
+    'linux_app',
 )
 
 MIDDLEWARE_CLASSES = (
