@@ -10,3 +10,5 @@ desktop.ini
 
 dist/*
 tecdir_project.egg-info/*
+
+db.sqlite3
