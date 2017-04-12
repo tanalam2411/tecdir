@@ -17,83 +17,77 @@
 {% block content %}
 
 <div class="row row-body">
-<div class="row">
-    <div class="col-sm-12 col-md-12">
-        <h1><strong>Install <span class="blog-title-strong">PostgreSQL RPM</span>(binary) on <span class="blog-title-strong">Centos</span></strong></h1>
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <h1><strong>Install <span class="blog-title-strong">PostgreSQL RPM</span>(binary) on <span class="blog-title-strong">Centos</span></strong></h1>
+        </div>
+    </div>
+
+    <div class="row row-content">
+        <div class="col-sm-12 col-md-12">
+            <p class="content-style">Edit <span class="file-path"><b>/etc/yum.repos.d/CentOS-Base.repo</b></span> file and append <span><b>exclude=postgresql*</b></span></p>
+
+            <div class="terminal-body">
+                <p class="terminal-command">$ vi /etc/yum.repos.d/CentOS-Base.repo</p>
+                <div class="terminal-command-output">
+                    <p class="terminal-command">[updates]</p>
+                    <p class="terminal-command">exclude=postgresql*</p>
+
+                    <p class="terminal-command">[base]</p>
+                    <p class="terminal-command">exclude=postgresql*</p>
+                </div>
+            </div>
+
+            <p class="content-style">Get the specific version of RPM link from here - <span class="href-link"><b><a class="a-href-link" href="https://yum.postgresql.org/9.6/redhat/rhel-6.8-x86_64/">https://yum.postgresql.org/9.6/redhat/rhel-6.8-x86_64/</a></b></span></p>
+
+            <div class="terminal-body">
+                <p class="terminal-command">$ yum install https://yum.postgresql.org/9.6/redhat/rhel-6.8-x86_64/pgdg-centos96-9.6-3.noarch.rpm</p>
+                <p class="terminal-command">$ yum list postgresql*</p>
+                <p class="terminal-command">$ yum install postgresql96-server -y</p>
+            </div>
+
+
+            <p class="content-style">Default data directory is <span class="file-path"><b>/var/lib/pgsql/9.6/data</b></span></p>
+
+            <p class="content-style">Initialize the database in <b>PGDATA</b>(/var/lib/pgsql/9.6/data)</p>
+
+            <div class="terminal-body">
+                <p class="terminal-command">$ service postgresql-9.6 initdb</p>
+                <div class="terminal-command-output">
+                    <p class="terminal-command">Initializing database:</p>
+                </div>
+            </div>
+
+
+            <p class="content-style">To start PostgreSQL automatically when the OS starts:</p>
+            <div class="terminal-body">
+                <p class="terminal-command">$ chkconfig postgresql-9.6 on</p>
+            </div>
+
+            <p class="content-style">Check the postgres service status<b>($ service postgresql-9.6 status)</b> and if it is stopped, start the service using command:</p>
+            <div class="terminal-body">
+                <p class="terminal-command">$ service postgresql-9.6 start</p>
+            </div>
+
+            <p class="content-style">Switch to user <b>"postgres"</b> using command <b>$ su - postgres</b> for root user or <b>$ sudo -i -u postgres</b> for sudo user.</p>
+            <div class="terminal-body">
+                <p class="terminal-command">$ su - postgres</p>
+                <p class="terminal-command">$ psql</p>
+                <div class="terminal-command-output">
+                    <p class="terminal-command">postgres=#</p>
+                </div>
+            </div>
+
+
+            <p class="content-style">For extensions like <b>dblink</b> etc install <b>postgresql-contrib</b></p>
+            <p class="content-style">Get the RPM link from here - <span class="href-link"><b><a class="a-href-link" href="https://yum.postgresql.org/9.6/redhat/rhel-6.8-x86_64/">https://yum.postgresql.org/9.6/redhat/rhel-6.8-x86_64/</a></b></span></p>
+            <div class="terminal-body">
+                <p class="terminal-command">$ yum install https://yum.postgresql.org/9.6/redhat/rhel-6.8-x86_64/postgresql96-contrib-9.6.2-2PGDG.rhel6.x86_64.rpm</p>
+            </div>
+
+        </div>
     </div>
 </div>
-
-<div class="row row-content">
-    <div class="col-sm-12 col-md-12">
-        <p class="content-style">Edit <span class="file-path"><b>/etc/yum.repos.d/CentOS-Base.repo</b></span> file and append <span><b>exclude=postgresql*</b></span></p>
-
-        <div class="terminal-body">
-            <p class="terminal-command">$ vi /etc/yum.repos.d/CentOS-Base.repo</p>
-            <div class="terminal-command-output">
-                <p class="terminal-command">[updates]</p>
-                <p class="terminal-command">exclude=postgresql*</p>
-
-                <p class="terminal-command">[base]</p>
-                <p class="terminal-command">exclude=postgresql*</p>
-            </div>
-        </div>
-
-        <p class="content-style">Get the specific version of RPM link from here - <span class="href-link"><b><a class="a-href-link" href="https://yum.postgresql.org/9.6/redhat/rhel-6.8-x86_64/">https://yum.postgresql.org/9.6/redhat/rhel-6.8-x86_64/</a></b></span></p>
-
-        <div class="terminal-body">
-            <p class="terminal-command">$ yum install https://yum.postgresql.org/9.6/redhat/rhel-6.8-x86_64/pgdg-centos96-9.6-3.noarch.rpm</p>
-            <p class="terminal-command">$ yum list postgresql*</p>
-            <p class="terminal-command">$ yum install postgresql96-server -y</p>
-        </div>
-
-
-        <p class="content-style">Default data directory is <span class="file-path"><b>/var/lib/pgsql/9.6/data</b></span></p>
-
-        <p class="content-style">Initialize the database in <b>PGDATA</b>(/var/lib/pgsql/9.6/data)</p>
-
-        <!--<p>service postgresql-9.6 initdb</p>-->
-
-        <div class="terminal-body">
-            <p class="terminal-command">$ service postgresql-9.6 initdb</p>
-            <div class="terminal-command-output">
-                <p class="terminal-command">Initializing database:</p>
-            </div>
-        </div>
-
-
-
-        <p class="content-style">To start PostgreSQL automatically when the OS starts:</p>
-        <div class="terminal-body">
-            <p class="terminal-command">$ chkconfig postgresql-9.6 on</p>
-        </div>
-
-        <p class="content-style">Check the postgres service status<b>($ service postgresql-9.6 status)</b> and if it is stopped, start the service using command:</p>
-        <div class="terminal-body">
-            <p class="terminal-command">$ service postgresql-9.6 start</p>
-        </div>
-
-        <p class="content-style">Switch to user <b>"postgres"</b> using command <b>$ su - postgres</b> for root user or <b>$ sudo -i -u postgres</b> for sudo user.</p>
-        <div class="terminal-body">
-            <p class="terminal-command">$ su - postgres</p>
-            <p class="terminal-command">$ psql</p>
-            <div class="terminal-command-output">
-                <p class="terminal-command">postgres=#</p>
-            </div>
-        </div>
-
-
-        <p class="content-style">For extensions like <b>dblink</b> etc install <b>postgresql-contrib</b></p>
-        <p class="content-style">Get the RPM link from here - <span class="href-link"><b><a class="a-href-link" href="https://yum.postgresql.org/9.6/redhat/rhel-6.8-x86_64/">https://yum.postgresql.org/9.6/redhat/rhel-6.8-x86_64/</a></b></span></p>
-        <!--<p class="content-style">connect/login as root</p>-->
-        <div class="terminal-body">
-            <p class="terminal-command">$ yum install https://yum.postgresql.org/9.6/redhat/rhel-6.8-x86_64/postgresql96-contrib-9.6.2-2PGDG.rhel6.x86_64.rpm</p>
-        </div>
-
-    </div>
-</div>
-</div>
-
-
 
 
 {% endblock %}
