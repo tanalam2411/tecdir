@@ -11,3 +11,10 @@
     color: #fff;
     background-color: cadetblue;
 }
+
+/* --------------------------   Extra Small Devices, Phones ------------------------*/
+@media only screen and (max-width : 768px) {
+
+
+
+}

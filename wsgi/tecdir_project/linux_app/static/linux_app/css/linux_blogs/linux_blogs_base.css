@@ -1,0 +1,114 @@
+
+
+.terminal-body {
+    background-color: #586E75;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.terminal-command {
+    #float: left;
+    margin: 0;
+    padding: 0;
+    font-family: Menlo, Courier New;
+    font-size: 18px;
+    text-rendering: optimizeLegibility;
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+}
+
+.terminal-command-output {
+    padding-top: 12px;
+    margin-left: 10px;
+}
+
+.blog-title-strong {
+    color: #2EAD7B;
+}
+
+.row-body {
+    padding: 40px;
+    background-color: #F4F4F4;
+}
+
+.row-content {
+    padding-top: 15px;
+    background-color: white;
+}
+
+
+.content-style {
+    font-family: monospace;
+}
+
+
+.file-path {
+    border-radius: 3px;
+    background-color: #2EAD7B;
+    padding: 3px;
+    color: white;
+}
+
+
+.href-link
+{
+    border-radius: 3px;
+    background-color: #FF851B;
+    padding: 3px;
+    color: white;
+}
+
+.a-href-link {
+    color: white;
+}
+a.a-href-link:link{
+  color:white;
+}
+a.a-href-link:visited{
+  color:white;
+}
+a.a-href-link:hover{
+  color:white;
+}
+a.a-href-link:focus{
+  color:white;
+}
+a.a-href-link:active{
+  color:white;
+}
+
+
+/* ----------
+
+----------------   Extra Small Devices, Phones ------------------------*/
+@media only screen and (max-width : 768px) {
+
+    .blog-title-strong {
+        color: #2EAD7B;
+    }
+
+    .row-body {
+        padding: 20px;
+        background-color: #F4F4F4;
+    }
+
+    .row-content {
+        padding-top: 15px;
+        background-color: white;
+    }
+
+    .content-style {
+        font-family: monospace;
+    }
+
+    .file-path {
+        border-radius: 3px;
+        background-color: #2EAD7B;
+        padding: 3px;
+        color: white;
+    }
+
+
+}

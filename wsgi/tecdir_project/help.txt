@@ -11,6 +11,7 @@
 11) Collapsible list - http://jsfiddle.net/zessx/r6eaw/12/
 12) Glyphicons and other component - http://getbootstrap.com/components/
 13) Great UI for text and fonts for tutorial content - https://www.khanacademy.org/partner-content/pixar/effects/particle/p/smoothed-particle-hydrodynamics
+14) Indicate the current page’s location within a navigational hierarchy - https://v4-alpha.getbootstrap.com/components/breadcrumb/
 
 
 

@@ -41,6 +41,5 @@ def install_postgres_on_centos(request):
     :return: tmux_tutorial tmux tutorial home page: http://www.tecdir.com/linux/tmux
     """
     context = {}
-    print("abcbcbc")
-    template = loader.get_template('linux_app/linux_blogs/install_postgres_on_centos.html')
+    template = loader.get_template('linux_app/linux_blogs/install_postgres_rpm_on_centos.html')
     return HttpResponse(template.render(context), request)
