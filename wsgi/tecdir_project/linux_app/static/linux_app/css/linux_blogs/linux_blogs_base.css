@@ -4,6 +4,8 @@
     background-color: #586E75;
     margin-bottom: 10px;
     margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 
@@ -12,7 +14,7 @@
     margin: 0;
     padding: 0;
     font-family: Menlo, Courier New;
-    font-size: 18px;
+    font-size: 15px;
     text-rendering: optimizeLegibility;
     font-weight: bold;
     color: white;
@@ -20,13 +22,18 @@
 }
 
 .terminal-command-output {
-    padding-top: 12px;
+    padding-top: 5px;
     margin-left: 10px;
 }
 
 .blog-title-strong {
     color: #2EAD7B;
 }
+
+.blog-rabbitmq-title-strong {
+    color: #FF6600;
+}
+
 
 .row-body {
     padding: 40px;
@@ -46,69 +53,118 @@
 
 .file-path {
     border-radius: 3px;
-    background-color: #2EAD7B;
+    #background-color: #2EAD7B;
     padding: 3px;
-    color: white;
+    color: #3e79cc;
+    border: 1px solid #EEE;
+    font-family: monospace;
 }
 
 
-.href-link
-{
+.href-link {
     border-radius: 3px;
-    background-color: #FF851B;
+    #background-color: #FF851B;
     padding: 3px;
     color: white;
-}
-
-.a-href-link {
-    color: white;
-}
-a.a-href-link:link{
-  color:white;
-}
-a.a-href-link:visited{
-  color:white;
-}
-a.a-href-link:hover{
-  color:white;
-}
-a.a-href-link:focus{
-  color:white;
-}
-a.a-href-link:active{
-  color:white;
+    border: 1px solid #EEE;
 }
 
 
-/* ----------
 
-----------------   Extra Small Devices, Phones ------------------------*/
+.line {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+/* --------------------------   Extra Small Devices, Phones ------------------------*/
 @media only screen and (max-width : 768px) {
-
-    .blog-title-strong {
-        color: #2EAD7B;
-    }
 
     .row-body {
         padding: 20px;
         background-color: #F4F4F4;
     }
 
+    .terminal-body {
+        background-color: #586E75;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+
+    .terminal-command {
+        #float: left;
+        margin: 0;
+        padding: 0;
+        font-family: Menlo, Courier New;
+        font-size: 15px;
+        text-rendering: optimizeLegibility;
+        font-weight: bold;
+        color: white;
+        margin-left: 10px;
+    }
+
+    .terminal-command-output {
+        padding-top: 5px;
+        margin-left: 10px;
+    }
+
+    .blog-title-strong {
+        color: #2EAD7B;
+    }
+
+    .blog-rabbitmq-title-strong {
+        color: #FF6600;
+    }
+
+
     .row-content {
         padding-top: 15px;
         background-color: white;
     }
 
+
     .content-style {
         font-family: monospace;
     }
 
+
     .file-path {
         border-radius: 3px;
-        background-color: #2EAD7B;
+        #background-color: #2EAD7B;
+        padding: 3px;
+        color: #3e79cc;
+        border: 1px solid #EEE;
+        font-family: monospace;
+    }
+
+
+    .href-link {
+        border-radius: 3px;
+        #background-color: #FF851B;
         padding: 3px;
         color: white;
+        border: 1px solid #EEE;
     }
+
+
+
+    .line {
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 1px;
+    }
+
 
 
 }

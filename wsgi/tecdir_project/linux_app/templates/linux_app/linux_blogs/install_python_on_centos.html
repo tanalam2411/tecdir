@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block app_level_head_tag_content %}
+<link rel="stylesheet" href="{% static 'linux_app/css/linux_blogs/linux_blogs_base.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+<div class="row row-body">
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <h1><strong>Install <span class="blog-title-strong">Python</span> on <span class="blog-title-strong">Centos</span></strong></h1>
+        </div>
+    </div>
+
+    <div class="row row-content">
+        <div class="col-sm-12 col-md-12">
+            <p class="content-style">Default python version</p>
+
+            <div class="terminal-body">
+                <p class="terminal-command">$ vi python -V</p>
+                <div class="terminal-command-output">
+                    <p class="terminal-command">Python 2.6.6</p>
+                </div>
+            </div>
+
+            <p class="content-style">Run the following commands before installing python.</p>
+
+            <div class="terminal-body">
+                <p class="terminal-command">$ yum update -y</p>
+                <p class="terminal-command">$ yum groupinstall 'Development Tools' -y </p>
+                <p class="terminal-command">$ yum install openssl-devel bzip2-devel zlib-devel libpcap-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel -y</p>
+            </div>
+
+            <!--<span class="href-link"><a class="a-href-link" href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></span>-->
+            <p class="content-style">Visit <span class="href-link"><a class="a-href-link" href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></span> look for the specific Python version you want to install, click on <b>Download</b> then you will be redirected to a new page with multiple package option. Right click on <b>Gzipped tarball</b> and click on copy link address.</p>
+
+            <p class="content-style">Download Python tarball by running the command <span><b>$ curl -O <code>link you copied</code></b></span></p>
+
+            <div class="terminal-body">
+                <p class="terminal-command">$ pwd</p>
+                <div class="terminal-command-output">
+                    <p class="terminal-command">/home/user/downloads</p>
+                </div>
+                <p class="terminal-command">$ curl -O https://www.python.org/ftp/python/2.7.6/Python-2.7.6.tgz</p>
+                <p class="terminal-command">$ tar -zxvf Python-2.7.6.tgz</p>
+            </div>
+
+
+            <p class="content-style">Add absolute path to <b>--prefix</b> where you would like to install python(where python will get compiled and installed).</p>
+
+
+            <div class="terminal-body">
+                <p class="terminal-command">$ ./configure --prefix='/home/user/python2.7'</p>
+                <p class="terminal-command">$ make</p>
+                <p class="terminal-command">$ make test</p>
+                <p class="terminal-command">$ make altinstall</p>
+            </div>
+
+            <p class="content-style">Installation completed.</p>
+            <p class="content-style">Test newly installed python.</p>
+            <div class="terminal-body">
+                <p class="terminal-command">$ /home/user/python2.7/bin/python2.7 -V</p>
+                <div class="terminal-command-output">
+                    <p class="terminal-command">Python 2.7.6</p>
+                </div>
+            </div>
+
+
+            <p class="content-style">Append <b>bin</b> path to <b>PATH</b> env variable to make it available everywhere.</p>
+
+
+            <div class="terminal-body">
+                <p class="terminal-command">$ export PATH=$PATH:/home/user/python2.7/bin</p>
+                <p class="terminal-command">$ python2.7</p>
+                <div class="terminal-command-output">
+                    <p class="terminal-command">Python 2.7.6</p>
+                    <p class="terminal-command">>>> exit()</p>
+                </div>
+            </div>
+
+            <hr class="line">
+
+
+            <p class="content-style"><h4><b>Installing pip</b></h4>
+            <div class="terminal-body">
+                <p class="terminal-command">$ curl -O https://bootstrap.pypa.io/get-pip.py</p>
+                <p class="terminal-command">$ python2.7 get-pip.py</p>
+                <p class="terminal-command">$ which pip</p>
+                <div class="terminal-command-output">
+                    <p class="terminal-command">/home/user/python2.7/bin/pip</p>
+                </div>
+            </div>
+
+            <hr class="line">
+
+            <p class="content-style"><h4><b>Installing Virtual Environment</b></h4></p>
+            <div class="terminal-body">
+                <p class="terminal-command">$ pip install virtualenv</p>
+                <p class="terminal-command">$ which virtualenv</p>
+                <div class="terminal-command-output">
+                    <p class="terminal-command">/home/user/python2.7/bin/virtualenv</p>
+                </div>
+                <p class="terminal-command">$ mkdir workspace && cd workspace</p>
+                <p class="terminal-command">$ virtualenv venv</p>
+                <p class="terminal-command">$ source venv/bin/activate</p>
+                <p class="terminal-command">(venv) $ which python</p>
+                <div class="terminal-command-output">
+                    <p class="terminal-command">/home/user/workspace/venv/bin/python</p>
+                </div>
+                <p class="terminal-command">(venv) $ python -V</p>
+                <div class="terminal-command-output">
+                    <p class="terminal-command">Python 2.7.6</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

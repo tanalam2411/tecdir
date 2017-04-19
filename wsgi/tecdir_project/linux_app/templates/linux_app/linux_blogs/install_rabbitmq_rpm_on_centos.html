@@ -19,13 +19,13 @@
 <div class="row row-body">
     <div class="row">
         <div class="col-sm-12 col-md-12">
-            <h1><strong>Install <span class="blog-title-strong">PostgreSQL RPM</span>(binary) on <span class="blog-title-strong">Centos</span></strong></h1>
+            <h1><strong>Install <span class="blog-rabbitmq-title-strong">Rabbit<span style="color: gray;">MQ</span> RPM</span>(binary) on <span class="blog-rabbitmq-title-strong">Centos</span></strong></h1>
         </div>
     </div>
 
     <div class="row row-content">
         <div class="col-sm-12 col-md-12">
-            <p class="content-style">Edit <span class="file-path">/etc/yum.repos.d/CentOS-Base.repo</span> file and append <span><b>exclude=postgresql*</b></span></p>
+            <p class="content-style">Edit <span class="file-path"><b>/etc/yum.repos.d/CentOS-Base.repo</b></span> file and append <span><b>exclude=postgresql*</b></span></p>
 
             <div class="terminal-body">
                 <p class="terminal-command">$ vi /etc/yum.repos.d/CentOS-Base.repo</p>
@@ -38,7 +38,7 @@
                 </div>
             </div>
 
-            <p class="content-style">Get the specific version of RPM link from here - <span class="href-link"><a class="a-href-link" href="https://yum.postgresql.org/9.6/redhat/rhel-6.8-x86_64/">https://yum.postgresql.org/9.6/redhat/rhel-6.8-x86_64/</a></span></p>
+            <p class="content-style">Get the specific version of RPM link from here - <span class="href-link"><b><a class="a-href-link" href="https://yum.postgresql.org/9.6/redhat/rhel-6.8-x86_64/">https://yum.postgresql.org/9.6/redhat/rhel-6.8-x86_64/</a></b></span></p>
 
             <div class="terminal-body">
                 <p class="terminal-command">$ yum install https://yum.postgresql.org/9.6/redhat/rhel-6.8-x86_64/pgdg-centos96-9.6-3.noarch.rpm</p>
@@ -47,7 +47,7 @@
             </div>
 
 
-            <p class="content-style">Default data directory is <span class="file-path">/var/lib/pgsql/9.6/data</span></p>
+            <p class="content-style">Default data directory is <span class="file-path"><b>/var/lib/pgsql/9.6/data</b></span></p>
 
             <p class="content-style">Initialize the database in <b>PGDATA</b>(/var/lib/pgsql/9.6/data)</p>
 
@@ -80,7 +80,7 @@
 
 
             <p class="content-style">For extensions like <b>dblink</b> etc install <b>postgresql-contrib</b></p>
-            <p class="content-style">Get the RPM link from here - <span class="href-link"><a class="a-href-link" href="https://yum.postgresql.org/9.6/redhat/rhel-6.8-x86_64/">https://yum.postgresql.org/9.6/redhat/rhel-6.8-x86_64/</a></span></p>
+            <p class="content-style">Get the RPM link from here - <span class="href-link"><b><a class="a-href-link" href="https://yum.postgresql.org/9.6/redhat/rhel-6.8-x86_64/">https://yum.postgresql.org/9.6/redhat/rhel-6.8-x86_64/</a></b></span></p>
             <div class="terminal-body">
                 <p class="terminal-command">$ yum install https://yum.postgresql.org/9.6/redhat/rhel-6.8-x86_64/postgresql96-contrib-9.6.2-2PGDG.rhel6.x86_64.rpm</p>
             </div>

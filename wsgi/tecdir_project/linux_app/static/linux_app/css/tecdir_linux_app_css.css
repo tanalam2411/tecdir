@@ -48,6 +48,10 @@
 }
 
 
+.subtitle-style {
+    text-align: left;
+}
+
 /* --------------------------   Extra Small Devices, Phones ------------------------*/
 @media only screen and (max-width : 768px) {
     .container .jumbotron, .container-fluid .jumbotron {
@@ -96,6 +100,11 @@
 
     .linux-index-title:focus {
         background-color: #30CA99 !important;
+    }
+
+
+    .subtitle-style {
+        text-align: left;
     }
 
 }
