@@ -34,6 +34,7 @@ def blogs_home(request):
     template = loader.get_template('linux_app/linux_blogs/linux_blogs_home.html')
     return HttpResponse(template.render(context), request)
 
+# -----------------------------------------------------------------------------
 
 def install_postgres_on_centos(request):
     """
@@ -63,3 +64,18 @@ def install_rabbitmq_on_centos(request):
     context = {}
     template = loader.get_template('linux_app/linux_blogs/install_rabbitmq_rpm_on_centos.html')
     return HttpResponse(template.render(context), request)
+
+
+# -----------------------------------------------------------------------------
+
+
+def pip_install_psycopg2_on_centos(request):
+    """
+    :param request:
+    :return: tmux_tutorial tmux tutorial home page: http://www.tecdir.com/linux/tmux
+    """
+    context = {}
+
+    template = loader.get_template('linux_app/linux_prob_sols/pip_install_psycopg2_on_centos.html')
+    return HttpResponse(template.render(context), request)
+

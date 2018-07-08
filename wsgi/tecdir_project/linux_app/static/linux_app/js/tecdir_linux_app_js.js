@@ -18,4 +18,14 @@ $( document ).ready(function() {
     $('#accordion-blog').on('hidden.bs.collapse', blogToggleChevron);
     $('#accordion-blog').on('shown.bs.collapse', blogToggleChevron);
 
+
+    function probSolToggleChevron(e) {
+    $(e.target)
+        .prev('.prob-sol-panel')
+        .find("i.indicator")
+        .toggleClass('glyphicon-folder-open glyphicon-folder-close');
+    }
+    $('#accordion-problem-solution').on('hidden.bs.collapse', probSolToggleChevron);
+    $('#accordion-problem-solution').on('shown.bs.collapse', probSolToggleChevron);
+
 });

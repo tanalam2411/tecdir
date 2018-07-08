@@ -10,5 +10,5 @@ def ccna_introdution(request):
     """
     context = {}
 
-    template = loader.get_template('computer_network_app/ccna/ccna_introdution.html')
+    template = loader.get_template('computer_network_app/ccna/ccna_introdution_200-125.html')
     return HttpResponse(template.render(context), request)
