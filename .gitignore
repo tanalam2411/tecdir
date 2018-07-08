@@ -329,3 +329,10 @@ pip-selfcheck.json
 
 # End of https://www.gitignore.io/api/python,pycharm,node,bower,virtualenv,eclipse,macos,osx
 
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+
